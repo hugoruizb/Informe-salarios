@@ -4,19 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Analytics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        .dashboard-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+
+        iframe {
+            width: 90%;
+            height: 80vh;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
-    <h1>Dashboard de Salarios</h1>
-    <p>Este es un dashboard interactivo desarrollado en <b>Looker Studio</b>.</p>
 
-    <iframe width="800" height="600"
-    src="https://lookerstudio.google.com/embed/reporting/ee3a039b-b282-420c-8ba7-a242462d64ae/page/aXvmE"
-    frameborder="0" 
-    style="border:0; width:100%; height:600px;" 
-    allowfullscreen 
-    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms">
-</iframe>
+    <div class="container">
+        <h1>Dashboard de Salarios</h1>
+        <p>Este es un dashboard interactivo desarrollado en <b>Looker Studio</b>.</p>
+    </div>
 
-    
+    <div class="dashboard-container">
+        <iframe src="https://lookerstudio.google.com/embed/reporting/ee3a039b-b282-420c-8ba7-a242462d64ae/page/aXvmE"
+                allowfullscreen 
+                sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms">
+        </iframe>
+    </div>
+
 </body>
 </html>
